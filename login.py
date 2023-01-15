@@ -47,6 +47,8 @@ def login_cookies(email, password, microsoft_authentication_link):
     click_next = driver.find_element_by_id("idBtn_Back")
     click_next.click()
 
+    return driver
+
 
 # Function for login of Microsoft Authentication portal when no accounts have been collected.
 def login(email, password, microsoft_authentication_link):
@@ -76,4 +78,4 @@ def login(email, password, microsoft_authentication_link):
     click_next = driver.find_element_by_id("idBtn_Back")
     click_next.click()
 
-    
+    return driver
